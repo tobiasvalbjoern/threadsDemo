@@ -19,7 +19,8 @@ class ThreadDemo extends Thread {
 	      System.out.println("Running " +  threadName );
 	      try {
 	         for(int i = 4; i > 0; i--) {
-	            SharedStringWriter("\"Thread: \" + threadName + \", \" + i");
+	        	 String str="Thread "+threadName+" was here. ";
+	        	 SharedStringWriter(str);
 	            // Let the thread sleep for a while.
 	            Thread.sleep(50);
 	         }
